@@ -27,3 +27,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildFingerprint=Infinix/X6882-OP/Infinix-X6882:14/UP1A.231005.007/260117V1572:user/release-keys
 
 PRODUCT_GMS_CLIENTID_BASE := android-transsion
+
+# Time
+LINEAGE_VERSION_APPEND_TIME_OF_DAY := true
