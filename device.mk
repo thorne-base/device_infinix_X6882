@@ -70,7 +70,8 @@ PRODUCT_PACKAGES += \
 
 # Init files
 PRODUCT_PACKAGES += \
-        fstab.mt6789.vendor_ramdisk
+        fstab.mt6789.vendor_ramdisk \
+        init.recovery.usb.rc
 
 # Shipping Api levels
 PRODUCT_SHIPPING_API_LEVEL := 31
