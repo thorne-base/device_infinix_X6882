@@ -238,6 +238,9 @@ ro.vendor.mtk_nn_baseline_support=1
 ro.vendor.mtk_nn_quant_preferred=1
 ro.vendor.mtk_nn_support=1
 
+# Power
+ro.vendor.perf.scroll_opt=true
+
 # Radio
 persist.radio.multisim.config=dsds
 persist.vendor.md_c2k_cap_dep_check=0
