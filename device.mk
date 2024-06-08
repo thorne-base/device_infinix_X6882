@@ -153,6 +153,7 @@ PRODUCT_PACKAGES += \
 
 # HIDL
 PRODUCT_PACKAGES += \
+    android.hidl.base@1.0.vendor \
     android.hidl.allocator@1.0.vendor \
     libhidltransport.vendor \
     libhwbinder.vendor
@@ -325,6 +326,13 @@ PRODUCT_SOONG_NAMESPACES += \
 # Vibrator
 PRODUCT_PACKAGES += \
     android.hardware.vibrator-service.transsion    
+
+# VNDK
+PRODUCT_PACKAGES += \
+    libbinder-v32 \
+    libhidlbase-v32 \
+    libstagefright_foundation-v32 \
+    libutils-v32
 
 # USB
 PRODUCT_PACKAGES += \
