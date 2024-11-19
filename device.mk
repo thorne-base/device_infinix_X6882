@@ -377,6 +377,11 @@ PRODUCT_PACKAGES += \
     android.hardware.usb-service.mediatek \
     android.hardware.usb.gadget-service.mediatek
 
+# vndservice
+PRODUCT_PACKAGES += \
+   vndservicemanager \
+   vndservice
+
 # Wi-Fi
 PRODUCT_PACKAGES += \
     wpa_supplicant \
