@@ -288,6 +288,7 @@ PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_PACKAGES += \
     FrameworkResOverlayNoir \
     SystemUIResOverlayNoir \
+    TetheringResOverlayNoir \
     WifiResOverlayNoir
 
 # Permissions
