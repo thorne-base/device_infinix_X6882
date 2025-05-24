@@ -155,6 +155,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hidl.base@1.0.vendor \
     android.hidl.allocator@1.0.vendor \
+    libhidltransport \
     libhidltransport.vendor \
     libhwbinder.vendor
 
@@ -224,7 +225,9 @@ PRODUCT_PACKAGES += \
     libflatbuffers-cpp.vendor
 
 PRODUCT_PACKAGES += \
-    libchrome.vendor
+    libchrome.vendor \
+    libminijail \
+    libminijail.vendor
 
 PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_audio.xml \
@@ -374,6 +377,7 @@ PRODUCT_PACKAGES += \
 
 # VNDK
 PRODUCT_PACKAGES += \
+    libbase_shim \
     libbinder-v32 \
     libhidlbase-v32 \
     libstagefrightfoundation-v33 \
