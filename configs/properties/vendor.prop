@@ -52,6 +52,7 @@ vendor.camera.mdp.dre.enable=1
 vendor.mtk.camera.app.fd.video=1
 
 # Display
+ro.surface_flinger.uclamp.min=130
 ro.hardware.egl=meow
 ro.hardware.vulkan=mali
 ro.vendor.composer_version=2.3
@@ -189,7 +190,7 @@ ro.vendor.mtk.sensor.support=yes
 
 # SoC
 ro.soc.manufacturer=Mediatek
-ro.soc.model=MT6789V/CD
+ro.soc.model=MT6789H
 
 # SurfaceFlinger
 ro.surface_flinger.primary_display_orientation=ORIENTATION_0
