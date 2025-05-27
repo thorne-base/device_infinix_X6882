@@ -1,4 +1,4 @@
-#
+m#
 # Copyright (C) 2024 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
@@ -181,7 +181,7 @@ TARGET_OTA_ASSERT_DEVICE := X6882,Infinix-X6882,noir
 
 # Vendor Security Patch
 BOOT_SECURITY_PATCH := $(VENDOR_SECURITY_PATCH)
-VENDOR_SECURITY_PATCH := 2024-03-05
+VENDOR_SECURITY_PATCH := $(PLATFORM_SECURITY_PATCH)
 
 # Verified Boot
 BOARD_AVB_ENABLE := true
