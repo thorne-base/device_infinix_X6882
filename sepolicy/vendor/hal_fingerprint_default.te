@@ -11,6 +11,8 @@ allow hal_fingerprint_default vendor_gf_data_file:dir create_dir_perms;
 allow hal_fingerprint_default vendor_gf_data_file:file create_file_perms;
 allow hal_fingerprint_default property_socket:sock_file write;
 
+add_hwservice(hal_fingerprint_default, fp_ext_svc2_hwservice)
+
 vndbinder_use(hal_fingerprint_default)
 hwbinder_use(hal_fingerprint_default)
 hal_client_domain(hal_fingerprint_default, hal_power)
