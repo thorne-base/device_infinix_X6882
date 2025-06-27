@@ -240,6 +240,7 @@ ro.vendor.mtk_nn_support=1
 
 # Power
 ro.vendor.perf.scroll_opt=true
+vendor.perf.framepacing.enable=1
 
 # Radio
 persist.radio.multisim.config=dsds
