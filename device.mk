@@ -241,6 +241,10 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/mediatek
 
+# Vibrator
+PRODUCT_PACKAGES += \
+    android.hardware.vibrator-service.transsion    
+
 # Wi-Fi
 PRODUCT_PACKAGES += \
     wpa_supplicant \
