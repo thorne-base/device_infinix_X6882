@@ -4,6 +4,10 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+# AAPT
+PRODUCT_AAPT_CONFIG := normal
+PRODUCT_AAPT_PREF_CONFIG := xxhdpi
+
 # A/B
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/launch_with_vendor_ramdisk.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/vabc_features.mk)
@@ -61,13 +65,21 @@ PRODUCT_PACKAGES += \
     audio.usb.default:64
 
 PRODUCT_PACKAGES += \
+    audio_policy.stub \
+    libopus.vendor \
+    audioclient-types-aidl-cpp.vendor \
+    libaudioroute.vendor \
     libaudiofoundation.vendor:64 \
     libbluetooth_audio_session:64 \
     libalsautils:64 \
     libnbaio_mono:64 \
     libtinycompress:64 \
     libdynproc:64 \
-    libhapticgenerator:64
+    libhapticgenerator:64 \
+    libprocessgroup.vendor:64
+
+PRODUCT_PACKAGES += \
+    MtkInCallService
 
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/audio/,$(TARGET_COPY_OUT_VENDOR)/etc)
@@ -76,9 +88,6 @@ PRODUCT_COPY_FILES += \
     frameworks/av/services/audiopolicy/config/a2dp_in_audio_policy_configuration_7_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/a2dp_in_audio_policy_configuration.xml \
     frameworks/av/services/audiopolicy/config/bluetooth_audio_policy_configuration_7_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_audio_policy_configuration.xml \
     frameworks/av/services/audiopolicy/config/r_submix_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/r_submix_audio_policy_configuration.xml
-
-PRODUCT_PACKAGES += \
-    MtkInCallService
 
 PRODUCT_PACKAGES += \
    vendor.mediatek.hardware.bluetooth.audio@2.1.vendor:64 \
@@ -101,7 +110,10 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     libcamera_metadata_shim \
-    libdng_sdk.vendor
+    libdng_sdk.vendor \
+    libexif.vendor \
+    libpiex \
+    libpng.vendor
 
 # Cgroup
 PRODUCT_COPY_FILES += \
@@ -115,9 +127,13 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.3-service \
     android.hardware.memtrack-service.mediatek-mali
+
 PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@4.0.vendor \
     android.frameworks.sensorservice@1.0.vendor \
+    android.hardware.graphics.mapper@4.0.vendor \
+    libhwc2on1adapter \
+    libhwc2onfbadapter \
     libdrm.vendor
 
 # DRM
@@ -155,6 +171,9 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss@2.1.vendor \
     android.hardware.gnss-V1-ndk.vendor
 
+PRODUCT_PACKAGES += \
+    libcurl.vendor
+
 # Health
 PRODUCT_PACKAGES += \
     android.hardware.health@2.1-service \
@@ -163,8 +182,11 @@ PRODUCT_PACKAGES += \
 
 # HIDL
 PRODUCT_PACKAGES += \
+    android.hidl.base@1.0 \
+    android.hidl.allocator@1.0 \
     android.hidl.base@1.0.vendor \
     android.hidl.allocator@1.0.vendor \
+    libhidlmemory.vendor \
     libhidltransport \
     libhidltransport.vendor \
     libhwbinder.vendor
@@ -208,6 +230,7 @@ PRODUCT_PACKAGES += \
     android.hardware.security.keymint-V1-ndk_platform.vendor:64 \
     android.hardware.security.secureclock-V1-ndk_platform.vendor:64 \
     android.hardware.security.sharedsecret-V1-ndk_platform.vendor:64 \
+    android.hardware.security.rkp-V3-ndk.vendor \
     libcppbor_external.vendor:64
 
 # Lights
@@ -223,6 +246,7 @@ PRODUCT_PACKAGES += \
     android.hardware.media.c2@1.0.vendor:64 \
     android.hardware.media.c2@1.1.vendor:64 \
     android.hardware.media.c2@1.2.vendor:64 \
+    android.hardware.cas@1.2-service-lazy \
     libcodec2_hidl@1.2.vendor:64 \
     libcodec2_hidl_plugin:64 \
     libcodec2_vndk.vendor:64 \
@@ -318,10 +342,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.power@1.3.vendor
 
-# Power | Dummy mtkperf lib
+# Power
 PRODUCT_PACKAGES += \
     libmtkperf_client_vendor \
-    libmtkperf_client
+    libmtkperf_client \
+    libpower.vendor
 
 # Power configurations
 PRODUCT_COPY_FILES += \
@@ -344,6 +369,31 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.radio.config@1.3.vendor \
     android.hardware.radio@1.6.vendor
+
+# Required for QPR3
+PRODUCT_PACKAGES += \
+    libexpat.vendor \
+    libunwindstack.vendor \
+    libchrome.vendor:64 \
+    libcurl.vendor \
+    libexif.vendor \
+    libdng_sdk.vendor \
+    liblz4.vendor \
+    libpiex \
+    libexpat.vendor \
+    libpng.vendor \
+    libion.vendor \
+    libui.vendor \
+    libmemunreachable.vendor \
+    libgatekeeper.vendor \
+    libjsoncpp.vendor \
+    libnetutils.vendor \
+    libdumpstateutil.vendor \
+    libruy.vendor \
+    libpcap.vendor \
+    libsqlite.vendor \
+    libutilscallstack.vendor \
+    libziparchive.vendor
 
 # Secure Element
 PRODUCT_PACKAGES += \
@@ -390,7 +440,9 @@ PRODUCT_PACKAGES += \
     libbase_shim \
     libbinder-v32 \
     libhidlbase-v32 \
-    libstagefrightfoundation-v33 \
+    libhidlbase_shim \
+    libstagefright_foundation-v33 \
+    libprocessgroup_shim:64 \
     libutils-v32
 
 # USB
