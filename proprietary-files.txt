@@ -1,9 +1,5 @@
 # Device proprietary files - From infinix-user 14 UP1A.231005.007 980236 release-keys, unless pinned
 
-# AEE
-vendor/lib/libaedv.so
-vendor/lib64/libaedv.so
-
 # APU
 -vendor/etc/vintf/manifest/manifest_apuware_apusys.xml
 -vendor/etc/vintf/manifest/manifest_apuware_hmp.xml
