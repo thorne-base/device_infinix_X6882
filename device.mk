@@ -507,6 +507,9 @@ PRODUCT_PACKAGES += \
     libprocessgroup_shim:64 \
     libutils-v32:64
 
+# userdata
+PRODUCT_FS_COMPRESSION := 1
+
 # vndservice
 PRODUCT_PACKAGES += \
    vndservicemanager \
