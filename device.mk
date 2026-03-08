@@ -316,6 +316,9 @@ PRODUCT_PACKAGES += \
     SettingsProviderOverlayNoir \
     SystemUIResOverlayNoir
 
+PRODUCT_PACKAGES += \
+    NcmTetheringOverlay
+
 # Lineage-Specific Overlays
 PRODUCT_PACKAGES += \
 	ApertureOverlay
