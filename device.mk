@@ -170,10 +170,6 @@ PRODUCT_PACKAGES += \
     init.sensor_2_0.rc \
     ueventd.mt6789.rc
 
-# Lights
-PRODUCT_PACKAGES += \
-    android.hardware.lights-service.transsion
-    
 # Keylayout
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/keylayout/mtk-tpd.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/mtk-tpd.kl
@@ -189,11 +185,20 @@ PRODUCT_PACKAGES += \
     android.hardware.security.sharedsecret-V1-ndk_platform.vendor:64 \
     libcppbor_external.vendor:64
 
+# Lights
+PRODUCT_PACKAGES += \
+    android.hardware.lights-service.transsion
+
 # Neural networks
 PRODUCT_PACKAGES += \
     android.hardware.neuralnetworks@1.0.vendor \
     android.hardware.neuralnetworks@1.3.vendor \
     libtextclassifier_hash.vendor
+
+# Overlays
+PRODUCT_PACKAGES += \
+    FrameworkResOverlayNoir \
+    SystemUIResOverlayNoir
 
 # Permissions
 PRODUCT_COPY_FILES += \
