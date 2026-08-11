@@ -347,18 +347,19 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/mediatek/libmtkperf_client \
     hardware/lineage/interfaces/power-libperfmgr \
     hardware/google/interfaces \
-    hardware/google/pixel
+    hardware/google/pixel \
+    hardware/transsion
 
 # Thermal
 PRODUCT_PACKAGES += \
     android.hardware.thermal-service.mediatek
-    
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/thermal/thermal_info_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/thermal_info_config.json
-    
+
 # Vibrator
 PRODUCT_PACKAGES += \
-    android.hardware.vibrator-service.transsion    
+    android.hardware.vibrator-service.transsion
 
 # VNDK
 PRODUCT_PACKAGES += \
