@@ -6,6 +6,5 @@
 
 runtime_resource_overlay {
     name: "SettingsResOverlayNoir",
-    vendor: true
+    vendor: true,
 }
-
