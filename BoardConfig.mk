@@ -42,7 +42,7 @@ ART_BUILD_HOST_NDEBUG := true
 ART_BUILD_HOST_DEBUG := false
 endif
 
-# Audio 
+# Audio
 BOARD_USES_ALSA_AUDIO := true
 
 # Boot image
