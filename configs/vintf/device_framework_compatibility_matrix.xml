@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <compatibility-matrix version="4.0" type="framework">
-    <hal format="hidl"> optional="true">
+    <hal format="hidl">
         <name>vendor.goodix.hardware.biometrics.fingerprint</name>
         <transport>hwbinder</transport>
         <version>2.1</version>
@@ -9,7 +9,7 @@
             <instance>default</instance>
         </interface>
    </hal>
-        <hal format="hidl"> optional="true">
+        <hal format="hidl">
         <name>vendor.mediatek.hardware.biometrics.fingerprint</name>
         <transport>hwbinder</transport>
         <version>2.1</version>
@@ -27,7 +27,16 @@
             <instance>default</instance>
         </interface>
     </hal>
-    <hal format="hidl" optional="true">
+    <hal format="hidl">
+        <name>vendor.transsion.hardware.trancam.trancamserver</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>ITrancamserver</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl"
         <name>vendor.transsion.hardware.trandatacenter</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
@@ -37,7 +46,7 @@
         </interface>
         <fqname>@1.0::ITranDataCenter/default</fqname>
     </hal>
-    <hal format="hidl" optional="true">
+    <hal format="hidl"
         <name>vendor.transsion.hardware.tranlog</name>
         <version>1.0</version>
         <interface>
@@ -46,7 +55,7 @@
         </interface>
         <fqname>@1.0::ITranLog/default</fqname>
     </hal>
-    <hal format="hidl" optional="true">
+    <hal format="hidl"
         <name>vendor.transsion.hardware.tranlogconfig</name>
         <version>1.0</version>
         <interface>
@@ -55,7 +64,7 @@
         </interface>
         <fqname>@1.0::ITranLogConfig/default</fqname>
     </hal>
-    <hal format="hidl" optional="true">
+    <hal format="hidl"
         <name>vendor.transsion.performance.sched</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
@@ -85,7 +94,7 @@
         </interface>
         <fqname>@1.1::ITee/default</fqname>
     </hal>
-    <hal format="hidl" optional="true">
+    <hal format="hidl"
         <name>vendor.trustonic.tee.tui</name>
         <version>1.0</version>
         <interface>
