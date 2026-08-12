@@ -72,12 +72,18 @@ PRODUCT_PACKAGES += \
     audioclient-types-aidl-cpp.vendor:64 \
     libaudioroute.vendor:64 \
     libaudiofoundation.vendor:64 \
+    libbundlewrapper:64 \
     libbluetooth_audio_session:64 \
+    libaudiopreprocessing:64 \
     libalsautils:64 \
+    libdownmix:64 \
+    libeffectproxy:64 \
     libnbaio_mono:64 \
     libtinycompress:64 \
     libdynproc:64 \
     libhapticgenerator:64 \
+    libldnhncr:64 \
+    libreverbwrapper:64 \
     libprocessgroup.vendor:64
 
 PRODUCT_PACKAGES += \
@@ -210,6 +216,7 @@ PRODUCT_PACKAGES += \
     libhidlmemory.vendor:64 \
     libhidltransport:64 \
     libhidltransport.vendor:64 \
+    libhwbinder:64 \
     libhwbinder.vendor:64
 
 # IMS
@@ -499,7 +506,9 @@ PRODUCT_PACKAGES += \
     libwifi-hal-wrapper:64 \
     wpa_supplicant \
     hostapd \
-    android.hardware.wifi-service
+    android.hardware.wifi-service \
+    libkeystore-wifi-hidl:64 \
+    libkeystore-engine-wifi-hidl:64
 
 PRODUCT_PACKAGES += \
     android.hardware.tetheroffload.config@1.0.vendor:64 \
