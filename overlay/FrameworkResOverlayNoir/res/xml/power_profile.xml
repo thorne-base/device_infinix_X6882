@@ -23,8 +23,7 @@
         <value>6</value>
         <value>2</value>
     </array>
-    <array
-        name="cpu.speeds.cluster0">
+    <array name="cpu.speeds.cluster0">
         <value>500000</value>
         <value>650000</value>
         <value>700000</value>
@@ -50,8 +49,7 @@
         <value>1900000</value>
         <value>2000000</value>
     </array>
-    <array
-        name="cpu.speeds.cluster1">
+    <array name="cpu.speeds.cluster1">
         <value>725000</value>
         <value>800000</value>
         <value>900000</value>
@@ -69,8 +67,7 @@
         <value>2100000</value>
         <value>2200000</value>
     </array>
-    <array
-        name="cpu.active.cluster0">
+    <array name="cpu.active.cluster0">
         <value>7.07</value>
         <value>9.12</value>
         <value>10.26</value>
@@ -96,8 +93,7 @@
         <value>60.44</value>
         <value>67.66</value>
     </array>
-    <array
-        name="cpu.active.cluster1">
+    <array name="cpu.active.cluster1">
         <value>30.46</value>
         <value>30.57</value>
         <value>35.65</value>
@@ -115,18 +111,12 @@
         <value>167.57</value>
         <value>177.02</value>
     </array>
-    <item
-        name="cpu.idle">5.07</item>
-    <item
-        name="cpu.suspend">5.07</item>
-    <item
-        name="cpu.active">9.89</item>
-    <item
-        name="cpu.cluster_power.cluster0">2.11</item>
-    <item
-        name="cpu.cluster_power.cluster1">2.22</item>
-    <array
-        name="cpu.core_speeds.cluster0">
+    <item name="cpu.idle">5.07</item>
+    <item name="cpu.suspend">5.07</item>
+    <item name="cpu.active">9.89</item>
+    <item name="cpu.cluster_power.cluster0">2.11</item>
+    <item name="cpu.cluster_power.cluster1">2.22</item>
+    <array name="cpu.core_speeds.cluster0">
         <value>500000</value>
         <value>650000</value>
         <value>700000</value>
@@ -152,8 +142,7 @@
         <value>1900000</value>
         <value>2000000</value>
     </array>
-    <array
-        name="cpu.core_speeds.cluster1">
+    <array name="cpu.core_speeds.cluster1">
         <value>725000</value>
         <value>800000</value>
         <value>900000</value>
@@ -171,8 +160,7 @@
         <value>2100000</value>
         <value>2200000</value>
     </array>
-    <array
-        name="cpu.core_power.cluster0">
+    <array name="cpu.core_power.cluster0">
         <value>7.07</value>
         <value>9.12</value>
         <value>10.26</value>
@@ -198,8 +186,7 @@
         <value>60.44</value>
         <value>67.66</value>
     </array>
-    <array
-        name="cpu.core_power.cluster1">
+    <array name="cpu.core_power.cluster1">
         <value>30.46</value>
         <value>30.57</value>
         <value>35.65</value>
@@ -217,51 +204,36 @@
         <value>167.57</value>
         <value>177.02</value>
     </array>
-    <array
-        name="memory.bandwidths">
+    <array name="memory.bandwidths">
         <value>22.7</value>
     </array>
-    <item
-        name="battery.capacity">5000</item>
-    <item
-        name="wifi.controller.idle">15.2</item>
-    <item
-        name="wifi.controller.rx">296.22</item>
-    <item
-        name="wifi.controller.tx">426.91</item>
-    <array
-        name="wifi.controller.tx_levels" />
-    <item
-        name="wifi.controller.voltage">4.0</item>
-    <array
-        name="wifi.batchedscan">
+    <item name="battery.capacity">5000</item>
+    <item name="wifi.controller.idle">15.2</item>
+    <item name="wifi.controller.rx">296.22</item>
+    <item name="wifi.controller.tx">426.91</item>
+    <array name="wifi.controller.tx_levels" />
+    <item name="wifi.controller.voltage">4.0</item>
+    <array name="wifi.batchedscan">
         <value>30.7</value>
         <value>30.7</value>
         <value>30.7</value>
         <value>30.7</value>
         <value>30.7</value>
     </array>
-    <item
-        name="modem.controller.sleep">0</item>
-    <item
-        name="modem.controller.idle">96.36</item>
-    <item
-        name="modem.controller.rx">676.3</item>
-    <array
-        name="modem.controller.tx">
+    <item name="modem.controller.sleep">0</item>
+    <item name="modem.controller.idle">96.36</item>
+    <item name="modem.controller.rx">676.3</item>
+    <array name="modem.controller.tx">
         <value>676.3</value>
         <value>430.7</value>
         <value>157.3</value>
         <value>111.2</value>
         <value>106.4</value>
     </array>
-    <item
-        name="modem.controller.voltage">0</item>
-    <array
-        name="gps.signalqualitybased">
+    <item name="modem.controller.voltage">0</item>
+    <array name="gps.signalqualitybased">
         <value>0</value>
         <value>0</value>
     </array>
-    <item
-        name="gps.voltage">0</item>
+    <item name="gps.voltage">0</item>
 </device>
