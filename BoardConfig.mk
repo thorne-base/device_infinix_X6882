@@ -69,7 +69,7 @@ BOARD_MKBOOTIMG_ARGS += --dtb_offset $(BOARD_DTB_OFFSET)
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 
 # Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := x6882
+TARGET_BOOTLOADER_BOARD_NAME := Infinix-X6882
 TARGET_NO_BOOTLOADER := true
 
 # Broken Rules
@@ -175,6 +175,9 @@ include device/mediatek/sepolicy_vndr/SEPolicy.mk
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
 SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/public
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
+
+# OTA assert
+TARGET_OTA_ASSERT_DEVICE := X6882,Infinix-X6882,noir
 
 # Vendor Security Patch
 VENDOR_SECURITY_PATCH := 2024-03-05
