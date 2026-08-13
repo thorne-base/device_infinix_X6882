@@ -320,6 +320,10 @@
          orientation. If zero, the value of rounded_corner_radius is used. -->
      <dimen name="rounded_corner_radius_top">0px</dimen>
 
+    <!-- The default height of the status bar used in {@link SystemBarUtils#getStatusBarHeight} to
+         calculate the status bar height. -->
+    <dimen name="status_bar_height_default">130.0px</dimen>
+
      <!-- Height of the status bar.
           Do not read this dimen directly. Use {@link SystemBarUtils#getStatusBarHeight} instead.
           -->
