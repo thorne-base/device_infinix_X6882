@@ -39,6 +39,7 @@ vendor/lib64/libbessound_hd_mtk_vendor.so
 vendor/lib64/libblisrc32_vendor.so
 vendor/lib64/libbwc.so
 vendor/lib64/libcvsd_mtk.so
+vendor/lib64/libkaraoke.so
 vendor/lib64/libmsbc_mtk.so
 vendor/lib64/libmtklimiter_vendor.so
 vendor/lib64/libmtkshifter_vendor.so
@@ -1333,6 +1334,7 @@ vendor/lib64/libion_mtk.so
 vendor/lib64/libion_ulit.so
 vendor/lib64/libmml.so
 vendor/lib64/libpqframework.so
+vendor/lib64/libpixelflinger.so
 vendor/lib64/libudf.so
 vendor/lib64/mt6789/arm.graphics-V1-ndk_platform.so;SYMLINK=vendor/lib64/arm.graphics-V1-ndk_platform.so
 vendor/lib64/mt6789/libaalservice.so;SYMLINK=vendor/lib64/libaalservice.so

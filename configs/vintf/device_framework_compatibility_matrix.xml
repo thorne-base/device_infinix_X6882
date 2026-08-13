@@ -56,7 +56,7 @@
         </interface>
         <fqname>@1.1::ITee/default</fqname>
     </hal>
-    <hal format="hidl"
+    <hal format="hidl">
         <name>vendor.trustonic.tee.tui</name>
         <version>1.0</version>
         <interface>

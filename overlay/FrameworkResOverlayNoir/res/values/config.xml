@@ -93,7 +93,6 @@
          This array should have size one greater than the size of the config_autoBrightnessLevels
          array. The brightness values must be non-negative and non-decreasing. This must be
          overridden in platform specific overlays -->
-    <resources>
     <integer-array name="config_autoBrightnessLcdBacklightValues">
         <item>8</item>
         <item>64</item>
